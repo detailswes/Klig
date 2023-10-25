@@ -142,7 +142,7 @@ const ReactFlowStyled = styled(ReactFlow)(({ theme }) => ({
   },
 }));
 
-const Workflow = () => {
+const WorkflowDiagram = () => {
   const [nodes, _, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const onConnect = useCallback(
@@ -180,4 +180,4 @@ const Workflow = () => {
   );
 };
 
-export default Workflow;
+export default WorkflowDiagram;

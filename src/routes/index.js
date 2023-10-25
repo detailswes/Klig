@@ -1,25 +1,26 @@
-import Home from "../pages/Home";
-import Product from "../pages/Product";
-import Products from "../pages/Products";
+import Workflow from "../pages/Workflow";
+import Dashboard from "../pages/Dashboard";
+import Signup from "../pages/Signup";
+import Login from "../pages/Login";
 
 const mainRoutes = [
   {
     path: "/",
-    element: <Home />,
+    element: <Workflow />,
   },
   {
-    path: "products",
-    children: [
-      {
-        index: true,
-        element: <Products />,
-      },
-      {
-        path: ":productId",
-        element: <Product />,
-      },
-    ],
+    path: "/dashboard",
+    element: <Dashboard />,
   },
+  {
+    path: "/signup",
+    element: <Signup />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+
 ];
 
 export default mainRoutes;

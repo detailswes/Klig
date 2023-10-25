@@ -127,7 +127,7 @@ const Drawer = styled(MuiDrawer, {
     boxSizing: "border-box",
     ...(!open && {
       [theme.breakpoints.down("lg")]: {
-        marginLeft: -56,
+        marginLeft: -72,
       },
       "& .logoicon": {
         display: "block",
@@ -199,7 +199,9 @@ export default function Header() {
           >
             <MenuIcon fontSize="large" />
           </IconButton>
-          <Search>
+          <Search sx={{
+            maxWidth:300
+          }}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>

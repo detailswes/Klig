@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import Workflow from "../components/workflow";
+import WorkflowDiagram from "../components/workflow";
 import AppSidebar from "../components/AppSidebar";
 import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
@@ -12,7 +12,9 @@ import ListItemText from "@mui/material/ListItemText";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import RestartAltOutlinedIcon from "@mui/icons-material/RestartAltOutlined";
 
-const Home = () => {
+
+
+const Workflow = () => {
   // Define an array of items for the list
   const listItems = [
     { icon: <RestartAltOutlinedIcon />, text: "Inbox" },
@@ -29,11 +31,12 @@ const Home = () => {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
+              marginBottom: "20px",
             }}
           >
             <Typography
               variant="h3"
-              gutterBottom
+           
               sx={{
                 "@media(max-width:1199px)": {
                   fontSize: "2rem",
@@ -93,6 +96,8 @@ const Home = () => {
         spacing={2}
         sx={{
           flex: 1,
+
+          
           "@media(max-width:1199px)": {
             display: "flex",
             flexDirection: "column",
@@ -109,7 +114,7 @@ const Home = () => {
             },
           }}
         >
-          <Workflow />
+          <WorkflowDiagram />
         </Grid>
         <Grid item lg={3}>
           <AppSidebar />
@@ -119,4 +124,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Workflow;

@@ -22,8 +22,8 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import { mainListItems, secondaryListItems } from "../components/listItems";
-import logo from "../assets/images/logo.png";
-import logoIcon from "../assets/images/logo-icon.png";
+import Logo from "../assets/images/logo.png";
+import LogoIcon from "../assets/images/logo-icon.png";
 import SearchIcon from "@mui/icons-material/Search";
 import InputBase from "@mui/material/InputBase";
 
@@ -252,7 +252,7 @@ export default function Header() {
             sx={{
               width: "100%",
             }}
-            src={logo}
+            src={Logo}
             alt="Logo"
           />
           <Box
@@ -261,7 +261,7 @@ export default function Header() {
             sx={{
               maxWidth: 55,
             }}
-            src={logoIcon}
+            src={LogoIcon}
             alt="logo Icon"
           />
           <IconButton onClick={toggleDrawer}>
